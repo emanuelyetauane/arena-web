@@ -1,0 +1,192 @@
+/*RESET*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh; /* garantir que a altura da seção principal ocupa toda a altura da tela*/
+  background-color: black;
+  color: #fff;
+}
+
+/*RESET*/
+
+.container-principal {
+  width: 100%;
+
+  display: flex; /* permitir que o conteúdo seja centralizado de forma inteligente*/
+  justify-content: center;
+  align-items: center;
+}
+
+/*TELA DE APRESENTAÇÃO*/
+
+.tela{
+  display: none;
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+.tela.ativa{
+  display: flex;
+}
+
+.tela-apresentacao {
+  min-height: 100vh;
+  max-width: 1400px;
+
+  align-items: center;
+
+  display: none;
+}
+
+.apresentacao-conteudo {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.etiqueta-projeto {
+  color: #14b1fa;
+  font-family: Decaydence Straight;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.titulo-principal {
+  font-family: BlackChancery;
+  font-size: 52px;
+  font-weight: 100;
+}
+
+.descricao {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.botao {
+  background-color: #12b0d8;
+  color: #14dffa;
+  padding: 16px 80px;
+  border: none     ;
+  color: #171717;
+  font-family: Decaydence Straight;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao:hover{
+  background-color: #2619db;
+  font-weight: 600;
+  scale: 1.05;
+}
+
+/*TELA DE APRENSENTAÇÃO*/
+
+/*TELA DE SELEÇÃO*/
+.tela-selecao {
+  width: 100%;
+
+ 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 25px;
+}
+
+.tela-selecao .cabecalho {
+  width: 900px;
+
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.tela-selecao .cta{
+font-size: 28px;
+font-weight: 600px;
+}
+
+.container-selecao{
+ width: 980px;
+  
+ border-top: 4px solid #149efa;
+ padding-top: 12px;
+ margin-top: 50px;
+
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+
+.carta-personagem{
+  width: 300px;
+  height: 370px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  cursor: pointer;
+  filter: grayscale(100);
+  transition: 0.5s;
+}
+
+.carta-personagem:hover{
+opacity: 1;
+filter: grayscale(0);
+
+transition: 0.5s;
+border: 4px solid #149efa;
+border-image-outset: 4px solid #149efa;
+}
+
+.carta-personagem.selecionado{
+opacity: 1;
+box-shadow: rgb(0, 140, 255) 0px 12px 48px 0px
+}
+
+.mago{
+ background-image: url(../src/img/mago.png);
+}
+
+.rainha{
+background-image: url(../src/img/rainha.png);
+}
+
+ .bruxa{
+  background-image: url(../src/img/bruxa.png);
+}
+
+.arqueira{
+  background-image: url(../src/img/arqueira.png);
+}
+
+.cavalheiro{
+  background-image: url(../src/img/cavalheiro.png);
+}
+
+.bruxo{
+ background-image: url(../src/img/bruxo.png);
+}
+
+.vidente{
+background-image: url(../src/img/vidente.png);
+}
+
+.vilao{
+background-image: url(../src/img/vilao.png);
+}
+/*TELA DE SELEÇÃO*/

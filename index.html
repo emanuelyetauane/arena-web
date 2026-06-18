@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- Esse é um documento HMTL 5 -->
+<html lang="pt-BR"> <!-- A lingua principal é portugays do Brasil-->
+<head> <!-- Aqui fica as configurações da página -->
+    <meta charset="UTF-8"> <!-- A página passa a trabalhar com acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preparando a página para melhorar a responsividade para os diversos dispositivos que existem -->
+    <title>Arena</title> <!-- texto que fica na aba do site -->
+    <link rel="stylesheet" href="/src/reset.css"> <!-- teeste -->
+   <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/responsive.css">
+</head>
+<body> <!-- E todo o conteúdo visível da página -->
+    <main class="container-principal">
+        <section class="tela tela-apresentacao ">
+            <div class="apresentacao-conteudo">
+                <p class="etiqueta-projeto"> Projeto HTML,CSS e Javascript</p>
+
+                <h1 class="titulo-principal">Arena</h1>
+
+                <p class="descricao">Escolha seu jogador, conheça seus atributos e entre na arena para
+                    travar batalhas épicas contra adversários poderosos. Use ataques,
+                    habilidades especiais e estratégias de defesa para provar quem é o
+                    verdadeiro campeão.</p>
+
+                <button class="botao" id="botao-inicial" type="button"> iniciar</button>
+            </div>
+
+            <div class="apresentacao-visual">
+                <img src="/src/img/Group 2.png" alt="" class="imagem-personagens">
+            </div>
+        </section>
+
+        <section class=" tela tela-selecao ativa">
+            <div class="cabecalho">
+                <p class="cta">
+                    Selecione um personagem</p>
+
+                <button class="botao" id="botao-selecioar" type="button">selecionar</button>
+            </div>
+
+            <div class="container-selecao">
+                <div class="carta-personagem mago " id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem rainha" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem bruxa" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem arqueira" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem cavalheiro" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem bruxo" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem vidente" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem vilao " id="carta-personagem">
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tela-confirmacao ativa">
+            <div class="confirmacao-visual">
+                <img src="./src/img/arqueira.png" alt="personagem selecionado" class="imagem-personagem-confirmado"
+                    id="imagem-personagem-confirmado">
+            </div>
+
+            <div class="confirmacao-conteudo">
+                <h2 class="personagem-nome">Merida</h2>
+                <p class="personagem-descricao">
+                    Merida é uma arqueira e maga da natureza que vaga pelas florestas esquecidas do reino. De cabelos
+                    vermelhos como chamas e olhar determinado, ela foi treinada desde jovem para proteger os segredos
+                    mágicos escondidos entre as árvores ancestrais. Após sua vila ser destruída por feiticeiros
+                    sombrios, Merida jurou impedir que a magia proibida consumisse o mundo.
+
+                    Empunhando um arco encantado e dominando feitiços ligados à natureza, ela utiliza raízes, vinhas e
+                    espíritos da floresta para derrotar seus inimigos. Apesar de sua aparência séria e solitária, Merida
+                    possui um coração bondoso e sempre ajuda aqueles que cruzam seu caminho em busca de esperança.
+                </p>
+            </div>
+
+            <div class="painel-atributos">
+                <div class="atributo atributo-ataque" id="atributo-ataque">
+                 <span class="atributo-nome">Ataque</span>
+
+                <div class="barra-preenchimento">
+                    <div class="barra-ataque" id="barra-ataque"></div>
+                </div>
+                  <span class="atributo-valor" id="atributo-valor">7</span>
+                </div>
+
+                <button class="botao" id="botao-confirmar" type="button">
+                    Confirmar
+                </button>
+            </div>    
+
+        </section>
+    </main>
+</body>
+</html>
