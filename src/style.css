@@ -24,14 +24,13 @@ body {
 
 /*TELA DE APRESENTAÇÃO*/
 
-.tela{
+.tela {
   display: none;
   min-height: 100vh;
   width: 100%;
-
 }
 
-.tela.ativa{
+.tela.ativa {
   display: flex;
 }
 
@@ -75,7 +74,7 @@ body {
   background-color: #12b0d8;
   color: #14dffa;
   padding: 16px 80px;
-  border: none     ;
+  border: none;
   color: #171717;
   font-family: Decaydence Straight;
   font-size: 16px;
@@ -83,7 +82,7 @@ body {
   transition: 0.3s;
 }
 
-.botao:hover{
+.botao:hover {
   background-color: #2619db;
   font-weight: 600;
   scale: 1.05;
@@ -95,7 +94,6 @@ body {
 .tela-selecao {
   width: 100%;
 
- 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -106,33 +104,32 @@ body {
 .tela-selecao .cabecalho {
   width: 900px;
 
-  display:flex ;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 80px;
 }
 
-.tela-selecao .cta{
-font-size: 28px;
-font-weight: 600px;
+.tela-selecao .cta {
+  font-size: 28px;
+  font-weight: 600px;
 }
 
-.container-selecao{
- width: 980px;
-  
- border-top: 4px solid #149efa;
- padding-top: 12px;
- margin-top: 50px;
+.container-selecao {
+  width: 980px;
 
+  border-top: 4px solid #149efa;
+  padding-top: 12px;
+  margin-top: 50px;
 
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 20px;
- flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.carta-personagem{
+.carta-personagem {
   width: 300px;
   height: 370px;
 
@@ -144,49 +141,81 @@ font-weight: 600px;
   transition: 0.5s;
 }
 
-.carta-personagem:hover{
-opacity: 1;
-filter: grayscale(0);
+.carta-personagem:hover {
+  opacity: 1;
+  filter: grayscale(0);
 
-transition: 0.5s;
-border: 4px solid #149efa;
-border-image-outset: 4px solid #149efa;
+  transition: 0.5s;
+  border: 4px solid #149efa;
+  border-image-outset: 4px solid #149efa;
 }
 
-.carta-personagem.selecionado{
-opacity: 1;
-box-shadow: rgb(0, 140, 255) 0px 12px 48px 0px
+.carta-personagem.selecionado {
+  opacity: 1;
+  box-shadow: rgb(0, 140, 255) 0px 12px 48px 0px;
 }
 
-.mago{
- background-image: url(../src/img/mago.png);
+.mago {
+  background-image: url(../src/img/mago.png);
 }
 
-.rainha{
-background-image: url(../src/img/rainha.png);
+.rainha {
+  background-image: url(../src/img/rainha.png);
 }
 
- .bruxa{
+.bruxa {
   background-image: url(../src/img/bruxa.png);
 }
 
-.arqueira{
+.arqueira {
   background-image: url(../src/img/arqueira.png);
 }
 
-.cavalheiro{
+.cavalheiro {
   background-image: url(../src/img/cavalheiro.png);
 }
 
-.bruxo{
- background-image: url(../src/img/bruxo.png);
+.bruxo {
+  background-image: url(../src/img/bruxo.png);
 }
 
-.vidente{
-background-image: url(../src/img/vidente.png);
+.vidente {
+  background-image: url(../src/img/vidente.png);
 }
 
-.vilao{
-background-image: url(../src/img/vilao.png);
+.vilao {
+  background-image: url(../src/img/vilao.png);
 }
 /*TELA DE SELEÇÃO*/
+
+/*TELA DE CONFIRMAÇÃO*/
+.tela-confirmacao {
+  width: 100%;
+  max-width: 1400px;
+  min-height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmacao-visual {
+  position: relative;
+  width: 50%;
+}
+
+.imagem-personagem-confirmado {
+  height: 906px;
+  width: 630px;
+}
+
+.gradiente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #171717 rgba(0, 0, 0, 0.01), #171717);
+  pointer-events: none;
+}
+
+/*TELA DE CONFIRMAÇÃO*/
